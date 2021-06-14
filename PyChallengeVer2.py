@@ -32,7 +32,6 @@ class Car():
 
 
 # Creating two instances with execution of three methods
-# Ford Focus with passed arguments
 ford_focus = Car(2012, 5000, 'Ford Focus', True)
 
 ford_focus.insurance_price()
@@ -41,7 +40,7 @@ ford_focus.print_out_car_data()
 
 print("\n")
 
-# List for Audi A3 with arguments
+
 audi_a3 = Car(1995, 80000, 'Audi A3', False)
 
 audi_a3.insurance_price()

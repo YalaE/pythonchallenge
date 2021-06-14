@@ -1,7 +1,7 @@
 # Creating Object of a car with 4 properties - was asked in assignment to use a list
 class Car():
-    def __init__(self, list_of_car_instances):
-        self.list_of_car_instances = list_of_car_instances
+    def __init__(self, *list_of_car_instances):
+         self.list_of_car_instances = list_of_car_instances
 
 # Method 1
     def insurance_price(self):
@@ -34,7 +34,7 @@ class Car():
 # Creating two instances with execution of three methods
 # List for Ford Focus
 ford_focus_list = [2012, 5000, 'Ford Focus', True]
-ford_focus = Car(ford_focus_list)
+ford_focus = Car(*ford_focus_list)
 
 ford_focus.insurance_price()
 ford_focus.door_status()
@@ -44,7 +44,7 @@ print("\n")
 
 # List for Audi A3
 audi_a3_list = [1995, 80000, 'Audi A3', False]
-audi_a3 = Car(audi_a3_list)
+audi_a3 = Car(*audi_a3_list)
 
 audi_a3.insurance_price()
 audi_a3.door_status()
