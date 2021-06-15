@@ -33,8 +33,7 @@ class Car():
 
 # Creating two instances with execution of three methods
 # List for Ford Focus
-ford_focus_list = [2012, 5000, 'Ford Focus', True]
-ford_focus = Car(*ford_focus_list)
+ford_focus = Car(2012, 5000, 'Ford Focus', True)
 
 ford_focus.insurance_price()
 ford_focus.door_status()
@@ -43,8 +42,7 @@ ford_focus.print_out_car_data()
 print("\n")
 
 # List for Audi A3
-audi_a3_list = [1995, 80000, 'Audi A3', False]
-audi_a3 = Car(*audi_a3_list)
+audi_a3 = Car(1995, 80000, 'Audi A3', False)
 
 audi_a3.insurance_price()
 audi_a3.door_status()
